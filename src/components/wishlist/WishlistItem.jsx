@@ -29,16 +29,16 @@ const WishlistItem = ({ item, onAddToCart, onRemove }) => {
     
     // For local images that already have the /uploads/ prefix
     if (product.image.startsWith('/uploads/')) {
-      return `http://localhost:5000${product.image}`;
+      return `https://backend-1-tf17.onrender.com${product.image}`;
     }
     
     // For the default no-photo image
     if (product.image === 'no-photo.jpg') {
-      return 'http://localhost:5000/uploads/no-photo.jpg';
+      return 'https://backend-1-tf17.onrender.com/uploads/no-photo.jpg';
     }
     
     // For local images without the /uploads/ prefix, add it
-    return `http://localhost:5000/uploads/${product.image}`;
+    return `https://backend-1-tf17.onrender.com/uploads/${product.image}`;
   };
 
   const discountedPrice = product?.discount 

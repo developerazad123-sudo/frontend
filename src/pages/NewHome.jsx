@@ -39,13 +39,13 @@ const NewHome = () => {
           } else if (product.image && product.image !== 'no-photo.jpg' && product.image !== '/uploads/no-photo.jpg') {
             // For uploaded images, construct the full URL
             if (product.image.startsWith('/uploads/')) {
-              imageUrl = `http://localhost:5000${product.image}`;
+              imageUrl = `https://backend-1-tf17.onrender.com${product.image}`;
             } else {
               // Add /uploads/ prefix for relative paths
-              imageUrl = `http://localhost:5000/uploads/${product.image}`;
+              imageUrl = `https://backend-1-tf17.onrender.com/uploads/${product.image}`;
             }
           } else {
-            imageUrl = 'http://localhost:5000/uploads/no-photo.jpg';
+            imageUrl = 'https://backend-1-tf17.onrender.com/uploads/no-photo.jpg';
           }
               
           // Return the complete product object with updated image

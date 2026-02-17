@@ -65,7 +65,7 @@ const ProductCard = ({ product }) => {
     
     // For local images, use the correct path with the full URL
     if (product.image && product.image.startsWith('/uploads/')) {
-      return `http://localhost:5000${product.image}`;
+      return `https://backend-1-tf17.onrender.com${product.image}`;
     }
     
     // For external images, use as is
@@ -76,12 +76,12 @@ const ProductCard = ({ product }) => {
     // If product has a specific local image, use it with the correct path
     if (product.image && product.image !== 'no-photo.jpg' && product.image !== '/uploads/no-photo.jpg') {
       // Add /uploads/ prefix
-      return `http://localhost:5000/uploads/${product.image}`;
+      return `https://backend-1-tf17.onrender.com/uploads/${product.image}`;
     }
     
     // For default no-photo image, use the correct path
     if (product.image === '/uploads/no-photo.jpg' || product.image === 'no-photo.jpg') {
-      return 'http://localhost:5000/uploads/no-photo.jpg';
+      return 'https://backend-1-tf17.onrender.com/uploads/no-photo.jpg';
     }
     
     // Generate image based on product name and category

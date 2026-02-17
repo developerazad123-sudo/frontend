@@ -93,10 +93,10 @@ const ProductDetail = () => {
     if (product.image && product.image !== 'no-photo.jpg') {
       // Check if the image path already starts with /uploads/
       if (product.image.startsWith('/uploads/')) {
-        return `http://localhost:5000${product.image}`;
+        return `https://backend-1-tf17.onrender.com${product.image}`;
       } else {
         // Add /uploads/ prefix for relative paths
-        return `http://localhost:5000/uploads/${product.image}`;
+        return `https://backend-1-tf17.onrender.com/uploads/${product.image}`;
       }
     }
     

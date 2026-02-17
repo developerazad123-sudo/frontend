@@ -75,7 +75,7 @@ Preview the production build locally.
 Create a `.env` file in the client root directory with the following variables:
 
 ```
-VITE_API_BASE_URL=http://localhost:5000/api
+VITE_API_BASE_URL=https://backend-1-tf17.onrender.com/api
 ```
 
 ## Dependencies

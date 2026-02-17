@@ -1,7 +1,7 @@
 // This file will contain all API calls to the backend
 
 // Use environment variable for production, fallback to empty for development proxy
-const API_BASE_URL = import.meta.env.VITE_API_URL || ''
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://backend-1-tf17.onrender.com'
 
 // Simple in-memory cache
 const apiCache = new Map()

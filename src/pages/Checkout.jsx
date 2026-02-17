@@ -78,7 +78,7 @@ const Checkout = () => {
       
       console.log('Sending order creation request with amount:', validatedTotal);
       
-      const response = await fetch('http://localhost:5000/api/payment/order', {
+      const response = await fetch('https://backend-1-tf17.onrender.com/api/payment/order', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -109,7 +109,7 @@ const Checkout = () => {
 
   const verifyPayment = async (paymentData) => {
     try {
-      const response = await fetch('http://localhost:5000/api/payment/verify', {
+      const response = await fetch('https://backend-1-tf17.onrender.com/api/payment/verify', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

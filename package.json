@@ -16,10 +16,11 @@
     "lucide-react": "^0.546.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.8.0",
+    "react-router-dom": "^6.30.3",
     "recharts": "^3.3.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.29.0",
     "@vitejs/plugin-react": "^4.0.0",
     "autoprefixer": "^10.4.0",
     "baseline-browser-mapping": "^2.9.11",

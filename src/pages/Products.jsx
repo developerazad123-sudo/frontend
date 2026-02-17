@@ -50,14 +50,14 @@ const Products = () => {
             if (product.image && product.image !== 'no-photo.jpg' && product.image !== '/uploads/no-photo.jpg') {
               // Check if the image path already starts with /uploads/
               if (product.image.startsWith('/uploads/')) {
-                product.image = `http://localhost:5000${product.image}`;
+                product.image = `https://backend-1-tf17.onrender.com${product.image}`;
               } else {
                 // Add /uploads/ prefix
-                product.image = `http://localhost:5000/uploads/${product.image}`;
+                product.image = `https://backend-1-tf17.onrender.com/uploads/${product.image}`;
               }
             } else {
               // For default no-photo image, use the correct path
-              product.image = 'http://localhost:5000/uploads/no-photo.jpg';
+              product.image = 'https://backend-1-tf17.onrender.com/uploads/no-photo.jpg';
             }
           }
           

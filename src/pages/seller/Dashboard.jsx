@@ -414,12 +414,12 @@ const SellerDashboard = () => {
     
     // For local images, use the correct path with the full URL
     if (product.image.startsWith('/uploads/')) {
-      return `http://localhost:5000${product.image}`;
+      return `https://backend-1-tf17.onrender.com${product.image}`;
     }
     
     // For the default no-photo image
     if (product.image === '/uploads/no-photo.jpg' || product.image === 'no-photo.jpg') {
-      return 'http://localhost:5000/uploads/no-photo.jpg';
+      return 'https://backend-1-tf17.onrender.com/uploads/no-photo.jpg';
     }
     
     // For external images, use as is
@@ -428,7 +428,7 @@ const SellerDashboard = () => {
     }
     
     // Default case - assume it's a local image
-    return `http://localhost:5000/uploads/${product.image}`;
+    return `https://backend-1-tf17.onrender.com/uploads/${product.image}`;
   };
 
   // If user is not loaded yet, show loading state

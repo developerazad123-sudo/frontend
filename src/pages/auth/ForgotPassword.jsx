@@ -16,7 +16,7 @@ const ForgotPassword = () => {
     setMessage('');
 
     try {
-      const response = await fetch('http://localhost:5000/api/auth/forgotpassword', {
+      const response = await fetch('https://backend-1-tf17.onrender.com/api/auth/forgotpassword', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
